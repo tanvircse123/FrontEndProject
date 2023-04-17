@@ -1,0 +1,31 @@
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.title1{
+    color: goldenrod;
+    background-color: aqua;
+}
+.title2{
+    color: goldenrod;
+    background-color: aqua;
+}
+
+.title3{
+    color:goldenrod;
+    background-color: aqua;
+}
+
+#welcome{
+    color: blue;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.context{
+    font-size:2opx;
+    color: blue;
+}
+

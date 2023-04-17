@@ -1,0 +1,40 @@
+.container{
+    margin: 20px;
+    padding: 50px;
+    border: 15px solid ;
+    
+
+}
+
+#blogtitle{
+    color: blue;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.box1{
+    color:green;
+    background-color: antiquewhite;
+    padding: 30px;
+    
+}
+
+.box2{
+    color:green;
+    background-color: antiquewhite;
+    padding: 30px;
+}
+
+
+
+
+
+/* remember 
+    first affect margin 
+    then affect the the border
+    padding means inside the border
+    width means the width of the border
+    
+
+*/
