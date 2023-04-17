@@ -1,0 +1,37 @@
+label{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+form{
+    text-align: center;
+    margin: 5px;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+input[type="text"],
+input[type="email"]
+{
+    margin-bottom: 10px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;   
+}
+fieldset
+{
+    align-content: center;
+    border: solid #ccc;
+    margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"]
+{
+    margin-right: -3px;
+}

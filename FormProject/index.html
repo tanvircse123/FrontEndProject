@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name_id" placeholder="Enter your Name">
+        </div>
+        <div>
+            <label for="mobile">Mobile:</label>
+            <input type="text" name="mobile" id="mobile_id" placeholder="Enter yout mobile number">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="mobile_id" placeholder="Enter your Email">
+        </div>
+        
+        <fieldset>
+            <legend>Select A Sport</legend>
+            <label for="cricket"><input type="radio" name="sport" value="cricket" id="cricket">
+            CRICKET
+            </label>
+            <label for="footballl"><input type="radio" name="sport" value="football" id="football">
+            Football</label>
+            <label for="Basketball">
+            <input type="radio" name="sport" value="basketball" id="basketball">
+            BasketBall</label>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Select A league</legend>
+            <label for="efl"><input type="checkbox" name="lg1" value="epl" id="epl_id">
+            Europian League
+            </label>
+            <label for="La Liga"><input type="checkbox" name="lg2" value="La Liga" id="la_liga_id">
+                La Liga
+            </label>
+            
+        </fieldset>
+
+        <input type="Submit" value="Submit">
+        
+    </form>
+    
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit',(event)=>{
+            event.preventDefault();
+
+            /// get All the values
+            const name   = form.elements.name.value;
+            const mobile = form.elements.mobile.value;
+            const email  = form.elements.email.value;
+            const sport  = form.elements.sport.value;
+            const leagues = [];
+            if(form.elements.lg1.checked){
+                leagues.push(form.elements.lg1.value);
+            }
+            if(form.elements.lg2.checked){
+                leagues.push(form.elements.lg2.value);
+            }
+            
+            const data = {
+                name:name,
+                mobile:mobile,
+                email:email,
+                sport:sport,
+                leagues:leagues
+            };
+            console.log(data);
+        });
+    </script>
+
+</body>
+</html>
